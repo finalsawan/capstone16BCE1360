@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Classification and Analysis of Advertisement and Product using Machine Learning</title>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="green"> Classification and Analysis of Advertisement and Product using Machine Learning </font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">Enter the situational constraints</div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+		  
+            <div class="form-group">
+              <label for="id"><p class="font-weight-bold">id</p></label>
+              <input type="text" name="id">
+              <small id="NYHelp" class="form-text text-muted"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="hour"><p class="font-weight-bold">hour</p></label>
+                <input type="text" name="hour">
+                <small id="CaliforniaHelp" class="form-text text-muted"></small>
+                </div>
+
+					<div class="form-group">
+					  <label for="C1"><p class="font-weight-bold">C1</p></label>
+					  <input type="text" name="C1">
+					  <small id="FloridaHelp" class="form-text text-muted"></small>
+					  </div>
+
+                  <div class="form-group">
+                    <label for="banner_pos"><p class="font-weight-bold">banner_pos</p></label>
+                    <input type="text" name="banner_pos">
+                    <small id="RnDSpendHelp" class="form-text text-muted"></small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="site_id"><p class="font-weight-bold">site_id</p></label>
+                      <input type="text" name="site_id">
+                      <small id="AdminSpendHelp" class="form-text text-muted"></small>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="site_domain"><p class="font-weight-bold">site_domain</p></label>
+                        <input type="text" name="site_domain">
+                        <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="site_category"><p class="font-weight-bold">site_category</p></label>
+                            <input type="text" name="site_category">
+                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="app_id"><p class="font-weight-bold">app_id</p></label>
+                                <input type="text" name="app_id">
+                                <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="app_domain"><p class="font-weight-bold">app_domain</p></label>
+                                    <input type="text" name="app_domain">
+                                    <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="app_category"><p class="font-weight-bold">app_category</p></label>
+                                        <input type="text" name="app_category">
+                                        <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="device_id"><p class="font-weight-bold">device_id</p></label>
+                                            <input type="text" name="device_id">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+											
+				
+				<div class="form-group">
+                                            <label for="device_ip"><p class="font-weight-bold">device_ip</p></label>
+                                            <input type="text" name="device_ip">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+											
+											
+											<div class="form-group">
+                                            <label for="device_model"><p class="font-weight-bold">device_model</p></label>
+                                            <input type="text" name="device_model">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+
+<div class="form-group">
+                                            <label for="device_type"><p class="font-weight-bold">device_type</p></label>
+                                            <input type="text" name="device_type">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+
+<div class="form-group">
+                                            <label for="device_conn_type"><p class="font-weight-bold">device_conn_type</p></label>
+                                            <input type="text" name="device_conn_type">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+
+<div class="form-group">
+                                            <label for="C14"><p class="font-weight-bold">C14</p></label>
+                                            <input type="text" name="C14">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+
+<div class="form-group">
+                                            <label for="C15"><p class="font-weight-bold">C15</p></label>
+                                            <input type="text" name="C15">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+
+<div class="form-group">
+                                            <label for="C16"><p class="font-weight-bold">C16</p></label>
+                                            <input type="text" name="C16">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+
+<div class="form-group">
+                                            <label for="C17"><p class="font-weight-bold">C17</p></label>
+                                            <input type="text" name="C17">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+
+<div class="form-group">
+                                            <label for="C18"><p class="font-weight-bold">C18</p></label>
+                                            <input type="text" name="C18">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+
+<div class="form-group">
+                                            <label for="C19"><p class="font-weight-bold">C19</p></label>
+                                            <input type="text" name="C19">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+
+<div class="form-group">
+                                            <label for="C20"><p class="font-weight-bold">C20</p></label>
+                                            <input type="text" name="C20">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+
+<div class="form-group">
+                                            <label for="C21"><p class="font-weight-bold">C21</p></label>
+                                            <input type="text" name="C21">
+                                            <small id="MarketSpendHelp" class="form-text text-muted"></small>
+                                            </div>
+
+
+
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
